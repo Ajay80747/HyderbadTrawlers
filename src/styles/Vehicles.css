@@ -1,0 +1,321 @@
+/* ===================================================================
+   VEHICLES CATALOGUE STYLES - CLEAN, LUXURY & ATTRACTIVE
+   =================================================================== */
+
+.vehicles-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 32px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+/* Category Filter Tabs */
+.category-filter-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .category-filter-tabs {
+    gap: 8px;
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding: 4px 2px 10px 2px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    scrollbar-width: none;
+  }
+  .category-filter-tabs::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.category-tab-btn {
+  padding: 10px 20px;
+  border-radius: var(--radius-full);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-deep-teal);
+  background-color: var(--color-white);
+  border: 1.5px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.category-tab-btn:hover {
+  border-color: var(--color-emerald-green);
+  color: var(--color-emerald-green);
+  transform: translateY(-1px);
+}
+
+.category-tab-btn.active {
+  background-color: var(--color-deep-teal);
+  color: var(--color-white);
+  border-color: var(--color-deep-teal);
+  box-shadow: 0 4px 14px rgba(7, 60, 59, 0.22);
+}
+
+@media (max-width: 480px) {
+  .category-tab-btn {
+    padding: 8px 16px;
+    font-size: 0.82rem;
+  }
+}
+
+/* Vehicle Search Bar */
+.vehicle-search-bar {
+  max-width: 460px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+.vehicle-search-input {
+  width: 100%;
+  min-height: 46px;
+  padding: 12px 18px 12px 44px;
+  border-radius: var(--radius-full);
+  border: 1.5px solid var(--color-border);
+  background-color: var(--color-white);
+  font-size: 1rem;
+  color: var(--color-dark-text);
+  box-shadow: var(--shadow-sm);
+  outline: none;
+  transition: all var(--transition-fast);
+}
+
+.vehicle-search-input:focus {
+  border-color: var(--color-emerald-green);
+  box-shadow: 0 0 0 3px rgba(23, 107, 91, 0.12);
+}
+
+.vehicle-search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-emerald-green);
+}
+
+/* Vehicles Grid */
+.vehicles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 26px;
+}
+
+@media (max-width: 768px) {
+  .vehicles-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* Clean Vehicle Card */
+.vehicle-card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(7, 60, 59, 0.07);
+  border: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.vehicle-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(7, 60, 59, 0.13);
+  border-color: rgba(213, 170, 88, 0.5);
+}
+
+/* Card Image Header */
+.vehicle-card-image-wrap {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  background-color: #073c3b0d;
+}
+
+@media (max-width: 480px) {
+  .vehicle-card-image-wrap {
+    height: 180px;
+  }
+}
+
+.vehicle-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.vehicle-card:hover .vehicle-card-img {
+  transform: scale(1.05);
+}
+
+.vehicle-card-category-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(7, 60, 59, 0.92);
+  backdrop-filter: blur(4px);
+  color: var(--color-white);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(213, 170, 88, 0.4);
+}
+
+.vehicle-card-tag-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--color-soft-gold);
+  color: var(--color-deep-teal);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+/* Card Body */
+.vehicle-card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+@media (max-width: 480px) {
+  .vehicle-card-body {
+    padding: 18px 16px;
+  }
+}
+
+.vehicle-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-deep-teal);
+  margin-bottom: 10px;
+}
+
+/* Specs Strip */
+.vehicle-specs-strip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.vehicle-spec-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--color-sage-green);
+  color: var(--color-deep-teal);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+}
+
+.vehicle-spec-pill.ac-pill {
+  background-color: #E0F2FE;
+  color: #0369A1;
+}
+
+.vehicle-highlight-text {
+  font-size: 0.88rem;
+  color: var(--color-muted-text);
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+/* Bold Clean Price Box */
+.vehicle-price-box {
+  background: linear-gradient(135deg, #FAF8F1 0%, #F5F1E5 100%);
+  border: 1.5px solid rgba(213, 170, 88, 0.35);
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.vehicle-rate-group {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.vehicle-rate-prefix {
+  font-size: 0.78rem;
+  color: var(--color-muted-text);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.vehicle-rate-value {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--color-deep-teal);
+  letter-spacing: -0.3px;
+}
+
+.vehicle-rate-note {
+  font-size: 0.74rem;
+  color: #926a17;
+  font-weight: 600;
+}
+
+/* Card Action Buttons */
+.vehicle-card-actions {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 8px;
+  margin-top: auto;
+}
+
+@media (max-width: 440px) {
+  .vehicle-card-actions {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .vehicle-card-actions .btn {
+    width: 100%;
+    min-height: 44px;
+  }
+}
+
+.no-vehicles-found {
+  text-align: center;
+  padding: 40px 16px;
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  border: 1.5px dashed var(--color-border);
+  grid-column: 1 / -1;
+}

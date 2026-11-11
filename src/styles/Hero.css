@@ -1,0 +1,404 @@
+/* ===================================================================
+   HERO SECTION STYLES - WITH OFFICIAL LOGO SHOWCASE & SIMPLE TEXT
+   (FULLY MOBILE RESPONSIVE)
+   =================================================================== */
+
+.hero-section {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(7, 60, 59, 0.94) 0%, rgba(23, 107, 91, 0.88) 100%),
+              url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=2000&q=85') center/cover no-repeat;
+  color: var(--color-white);
+  padding: 80px 0 90px 0;
+  overflow: hidden;
+}
+
+/* Subtle background accent glow */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(213, 170, 88, 0.18) 0%, rgba(213, 170, 88, 0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 48px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* Hero Content Left - Large & High Impact */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  align-self: flex-start;
+  background: rgba(213, 170, 88, 0.22);
+  border: 1.5px solid rgba(213, 170, 88, 0.55);
+  color: #fae19c;
+  font-size: 0.92rem;
+  font-weight: 800;
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* Heading Group with Large Travels Name */
+.hero-heading-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Large Travels Name - Extra Bold & Grand */
+.hero-travels-name {
+  font-family: var(--font-sans);
+  font-size: clamp(2.3rem, 5.2vw, 4rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.65);
+  margin: 0;
+}
+
+.name-white {
+  color: #ffffff;
+  display: inline-block;
+}
+
+.name-gold {
+  color: var(--color-soft-gold);
+  display: inline-block;
+  text-shadow: 0 4px 18px rgba(213, 170, 88, 0.45);
+}
+
+/* Sub-headline / Tagline */
+.hero-tagline-text {
+  font-size: clamp(1.25rem, 2.3vw, 1.85rem);
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.35;
+  margin: 0;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+}
+
+.tagline-highlight {
+  color: var(--color-soft-gold);
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 700;
+  display: inline-block;
+}
+
+/* Clear, Large Description */
+.hero-description {
+  font-size: clamp(1.1rem, 1.8vw, 1.3rem);
+  color: rgba(255, 255, 255, 0.96);
+  line-height: 1.65;
+  max-width: 620px;
+  font-weight: 500;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+
+.hero-actions .btn {
+  font-size: 1rem;
+  padding: 13px 24px;
+  font-weight: 700;
+}
+
+/* Large Rate Chips */
+.hero-rates-strip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+
+.hero-rate-chip {
+  background: rgba(255, 255, 255, 0.16);
+  border: 1.5px solid rgba(213, 170, 88, 0.5);
+  color: #ffffff;
+  padding: 7px 16px;
+  border-radius: var(--radius-full);
+  font-size: 0.88rem;
+  font-weight: 600;
+  backdrop-filter: blur(4px);
+}
+
+.hero-rate-chip strong {
+  color: #ffd880;
+  font-weight: 800;
+}
+
+.hero-rate-note {
+  font-size: 0.82rem;
+  color: #fce7b2;
+  font-weight: 600;
+}
+
+.hero-features-strip {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 10px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.hero-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.hero-feature-icon {
+  color: var(--color-soft-gold);
+  display: flex;
+}
+
+/* Hero Right: Official Logo Showcase */
+.hero-logo-showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.hero-emblem-wrap {
+  width: 100%;
+  max-width: 480px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+  border: 2px solid rgba(213, 170, 88, 0.55);
+  background: rgba(7, 60, 59, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 14px;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.hero-emblem-wrap:hover {
+  transform: translateY(-4px) scale(1.02);
+  border-color: var(--color-soft-gold);
+  box-shadow: 0 25px 60px rgba(213, 170, 88, 0.3);
+}
+
+.hero-emblem-image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  display: block;
+  object-fit: contain;
+}
+
+.hero-emblem-caption {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(7, 60, 59, 0.9);
+  border: 1px solid rgba(213, 170, 88, 0.4);
+  color: var(--color-soft-gold);
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  font-size: 0.88rem;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.caption-star {
+  color: #fbbf24;
+  letter-spacing: 2px;
+}
+
+/* Tablet & Mobile Media Queries */
+@media (max-width: 960px) {
+  .hero-section {
+    padding: 60px 0 70px 0;
+  }
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    text-align: center;
+  }
+  .hero-content {
+    align-items: center;
+  }
+  .hero-badge {
+    align-self: center;
+  }
+  .hero-actions {
+    justify-content: center;
+  }
+  .hero-rates-strip {
+    justify-content: center;
+  }
+  .hero-emblem-wrap {
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-section {
+    padding: 30px 0 40px 0;
+    overflow-x: hidden;
+  }
+  .hero-grid {
+    gap: 22px;
+    text-align: center;
+  }
+  .hero-content {
+    align-items: center;
+    gap: 14px;
+  }
+  .hero-heading-group {
+    align-items: center;
+    gap: 6px;
+  }
+  .hero-travels-name {
+    font-size: clamp(1.4rem, 6.4vw, 1.85rem) !important;
+    line-height: 1.18 !important;
+    letter-spacing: 0.2px !important;
+    margin: 0 !important;
+  }
+  .name-white,
+  .name-gold {
+    display: inline !important;
+  }
+  .hero-tagline-text {
+    font-size: 1rem !important;
+    line-height: 1.35 !important;
+    margin: 0 !important;
+  }
+  .hero-description {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+    max-width: 100%;
+  }
+
+  /* 2-Row Action Buttons Grid */
+  .hero-actions {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px !important;
+    width: 100% !important;
+    margin-top: 4px !important;
+  }
+  .hero-actions .btn-whatsapp {
+    grid-column: 1 / -1 !important;
+    order: -1 !important;
+    min-height: 48px !important;
+    font-size: 0.96rem !important;
+    padding: 12px 16px !important;
+    width: 100% !important;
+    border-radius: var(--radius-md) !important;
+  }
+  .hero-actions .btn-primary,
+  .hero-actions .btn-outline {
+    min-height: 44px !important;
+    font-size: 0.82rem !important;
+    padding: 10px 8px !important;
+    line-height: 1.2 !important;
+    white-space: normal !important;
+    text-align: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    border-radius: var(--radius-md) !important;
+  }
+
+  /* Balanced 2x2 Rate Chips Grid */
+  .hero-rates-strip {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px !important;
+    width: 100% !important;
+    margin-top: 8px !important;
+  }
+  .hero-rate-chip {
+    padding: 8px 10px !important;
+    font-size: 0.78rem !important;
+    text-align: center !important;
+    justify-content: center !important;
+    border-radius: var(--radius-sm) !important;
+    margin: 0 !important;
+  }
+  .hero-rate-note {
+    grid-column: 1 / -1 !important;
+    text-align: center !important;
+    font-size: 0.74rem !important;
+    margin-top: 2px !important;
+  }
+
+  /* Compact 2-Column Trust Strip */
+  .hero-features-strip {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px !important;
+    padding-top: 12px !important;
+    margin-top: 6px !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+    width: 100%;
+  }
+  .hero-feature-item {
+    font-size: 0.76rem !important;
+    gap: 6px !important;
+    justify-content: center !important;
+    text-align: left !important;
+  }
+
+  .hero-emblem-wrap {
+    max-width: 300px !important;
+    margin: 0 auto !important;
+    padding: 8px !important;
+  }
+  .hero-emblem-caption {
+    font-size: 0.78rem !important;
+    padding: 6px 14px !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-actions {
+    grid-template-columns: 1fr !important;
+  }
+  .hero-actions .btn-primary,
+  .hero-actions .btn-outline {
+    width: 100% !important;
+  }
+  .hero-rate-chip {
+    padding: 6px 4px !important;
+    font-size: 0.72rem !important;
+  }
+}

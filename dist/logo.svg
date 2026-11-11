@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 80" width="420" height="80">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2D082"/>
+      <stop offset="50%" stop-color="#D5AA58"/>
+      <stop offset="100%" stop-color="#B88D3D"/>
+    </linearGradient>
+  </defs>
+  <!-- Emblem Circle -->
+  <circle cx="42" cy="40" r="36" fill="#073C3B" stroke="url(#goldGrad)" stroke-width="2.5"/>
+  <circle cx="42" cy="40" r="31" fill="none" stroke="rgba(213, 170, 88, 0.4)" stroke-width="1" stroke-dasharray="2 2"/>
+  
+  <!-- Charminar Minarets -->
+  <path d="M24 58 L24 38 L28 38 L28 26 L31 26 L31 38 L35 38 L35 58 Z" fill="url(#goldGrad)"/>
+  <path d="M49 58 L49 38 L53 38 L53 26 L56 26 L56 38 L60 38 L60 58 Z" fill="url(#goldGrad)"/>
+  <path d="M30 42 Q42 34 54 42 L54 58 L30 58 Z" fill="#176B5B"/>
+  <path d="M36 58 Q42 49 48 58 Z" fill="url(#goldGrad)"/>
+  <circle cx="42" cy="25" r="3" fill="url(#goldGrad)"/>
+  <path d="M16 63 Q42 70 68 63" stroke="url(#goldGrad)" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Typography -->
+  <text x="92" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="19" fill="#073C3B" letter-spacing="1.5">THE HYDERABAD</text>
+  <text x="92" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14" fill="#D5AA58" letter-spacing="3.5">TOURS &amp; TRAVELS</text>
+  <text x="92" y="68" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500" font-size="9" fill="#59736E" letter-spacing="1">HYDERABAD TRAVELS AND TOURS • LUXURY FLEET</text>
+</svg>

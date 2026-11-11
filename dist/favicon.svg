@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <circle cx="50" cy="50" r="48" fill="#073C3B" stroke="#D5AA58" stroke-width="3"/>
+  <!-- Charminar Inspired Silhouette -->
+  <path d="M25 70 L25 45 L32 45 L32 30 L36 30 L36 45 L40 45 L40 70 Z" fill="#D5AA58"/>
+  <path d="M60 70 L60 45 L64 45 L64 30 L68 30 L68 45 L75 45 L75 70 Z" fill="#D5AA58"/>
+  <path d="M35 50 Q50 38 65 50 L65 70 L35 70 Z" fill="#176B5B"/>
+  <path d="M43 70 Q50 60 57 70 Z" fill="#073C3B"/>
+  <circle cx="50" cy="30" r="4" fill="#D5AA58"/>
+  <path d="M20 75 Q50 82 80 75" stroke="#D5AA58" stroke-width="2" fill="none"/>
+</svg>
